@@ -9,9 +9,11 @@ TEAL: #10E8D7
 
 
 body {
-   background-color: none;
+    background-color: none;
     color:#1E69FF;
-    font-family: 'Lato', sans-serif;
+}
+.set {
+/*    max-width:960px;*/
 }
 
 #header {
@@ -24,6 +26,8 @@ body {
     text-align: center;
     font-family:'Lato', sans-serif;
     position:relative;transform:translateY(50%);
+    color: #1E69FF;
+
 }
 
 #nav {
@@ -52,16 +56,17 @@ body {
     background-color: #FF12AA
 ; 
 }
-/*
 .menu {
     display:flex;
-    background:aliceblue;
-    justify-content: space-around;
+    background:#1E69FF;
+    justify-content: center;
     list-style-type: none;
     margin:0;
+    position:relative;
+    transform: translateY(100%)
+    font-family: 'Lato', sans-serif;
 }
-*/
-/*
+
 .menu > li {
 margin: 0 15px 0 15px;
 }
@@ -73,12 +78,12 @@ margin: 0 15px 0 15px;
     margin: 0 auto;
 }
 #middle-wrapper {
-        background-color:none;
+    background-color:none;
     margin:0 auto;
 }
-*/
+
 .side-by-side {
-    
+    display:flex;
 }
 
 #main-content-wrapper {
@@ -93,6 +98,7 @@ margin: 0 15px 0 15px;
 .image-content > img {
     max-width:200px;
     border-radius:50%;
+    border: 4px #FFB52B;
 }
 
 .image-content > h4 {
@@ -110,8 +116,8 @@ margin: 0 15px 0 15px;
 }
 
 #main-content-wrapper article {
-    
-    
+    width:50%;
+    margin-top:100px;
 }
 
 #main-content-wrapper article h2 {
@@ -119,13 +125,15 @@ margin: 0 15px 0 15px;
 }
 #main-content-wrapper article p {
     max-width:300px;
-    margin-top:0 auto;
+    margin-top: 0 auto;
+    color: #1E69FF;
 }
 
 #main-content-wrapper #skills {
     text-align:center;
     font-weight:300;
     letter-spacing:2px;
+    color: #1E69FF;
 }
 #main-content-wrapper #skills span {
     font-weight:400;
@@ -146,13 +154,14 @@ margin: 0 15px 0 15px;
     list-style-type: none;
 }
 #latest-work > li {
+    padding:15;
     padding-top: 15px;
     padding-bottom: 15px;
-    width: 350%;
+    width: 100%;
     border-bottom:1px black solid;
 }
 #latest-work >li:before {
-    content:'';
+    content:"";
     border-color:transparent #008eef;
     border-style: solid;
     border-width: .35em 0 .35em .45em;
@@ -160,7 +169,8 @@ margin: 0 15px 0 15px;
     height:0;
     width:0;
     left: -1em;
-    top:.9em;
+    top:0.9em;
+    position:relative;
     position:relative;
 }
 #favorite-sites {
@@ -177,14 +187,12 @@ margin: 0 15px 0 15px;
     margin:0;
     padding: 40px;
 }
-
 footer {
     background-color: #fff;
     text-align:center;
     font-family: 'Lato', sans-serif;
     min-height:100px;
 }
-
 footer > h1 {
     margin:0;
     transform: translateY(50%);
@@ -192,4 +200,9 @@ footer > h1 {
 .max-width {
     margin:0 auto;
     max-width: 960px;
+}
+
+/*Bootstrap Related*/
+.co ntainer-fluid {
+    padding:0;
 }
