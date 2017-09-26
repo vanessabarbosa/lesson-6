@@ -203,6 +203,9 @@ footer > h1 {
 }
 
 /*Bootstrap Related*/
-.co ntainer-fluid {
+.container-fluid {
     padding:0;
+}
+#favorite-sites > .row > .col-md-4 > img {
+    margin:0 auto;
 }

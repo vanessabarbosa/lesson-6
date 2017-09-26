@@ -35,8 +35,8 @@
                         <nav id="nav">
                             <ul class='button wrap'>
                             <button>Schedule</button>
-                            <button>CSS</button>
-                            <button>HTML</button>
+                            <button data-toggle="modal" data-target="#css3_modal">CSS</button>
+                            <button data-toggle="modal" data-target="#html5_modal">HTML</button>
                             <button>Responsive Design</button>
                             </ul>
 
@@ -117,11 +117,54 @@
                        
             </div>
        </div>
-  </div>         
+  </div>
+<!--end container div-->
+<!-- Modal-html5 -->
+<div class="modal fade" id="html5_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+          <div class='image-modal'><img src="images/css3.png"</div>
+      </div>
+      <br>
+      <br>
+      <p><strong>CSS3</strong></p>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>           
+<!-- Modal-css3 -->
+<div class="modal fade" id="css3_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>            
         <!--end container-->
-        <script src="js/main.js"></script>
-        <script src="js/bootstrap.min.js"></script>      
-         <script src="js/jquery.min.js"></script>      
+        
+             <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script> 
+            <script src="js/main.js"></script>
+              
         
         
        </body>        
